@@ -5,25 +5,23 @@ function App() {
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("");
 
-  function increment() {
-    setCount(prevCount => prevCount + 1);
-  }
-
-  function decrement() {
-    setCount(prevCount => prevCount - 1);
-  }
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCount(prevCount => prevCount + 1);
+    }, 1000);
+    // cleanup function (runs after componentWillUnmount)
+    return () => clearInterval(intervalId);
+    // empty array ~ componentDidMount (runs only first time)
+  }, []);
 
   useEffect(() => {
     setColor(randomcolor());
-    // (first param is callback function) and second parameter of useEffect is array, which ties function to a change in "count" and/or any other state properties in the array
+    // ~ componentDidUpdate, watching for variables in this array to run function
   }, [count]);
 
   return (
     <div>
       <h1 style={{ color: color }}>{count}</h1>
-      <button onClick={increment}>Increment!</button>
-      <br />
-      <button onClick={decrement}>Decrement!</button>
     </div>
   );
 }

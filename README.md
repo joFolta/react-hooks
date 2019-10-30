@@ -4,14 +4,20 @@
 #### Commit 1 >>> Part 1: useState() Part 1 - Creating State
 https://scrimba.com/p/p7P5Hd/cRqP9mhg
 ![Preview](/public/preview1.png)
-
+---
 #### Commit 2 >>> Part 2: useState() Part 2 - Changing State
 https://scrimba.com/p/p7P5Hd/cWQw9JH2
 ![Preview](/public/preview2.png)
-
-#### Commit 3 >>> Part 1: useEffect() Part 1
+---
+#### Commit 3 >>> Part 1: useEffect()
 https://scrimba.com/p/p7P5Hd/caqbeZTw
 ![Preview](/public/preview3.png)
+---
+#### Commit 4 >>> Part 2: useEffect()
+https://scrimba.com/p/p7P5Hd/caqbd6Am
+![Preview](/public/preview4.png)
+##### useEffect() to replace componentDidMount (empty array), componentDidUpdate (checking array's variables for changes), componentWillUnmount ("return" cleanup function on dismount)
+---
 
 React tutorial
 https://scrimba.com/g/glearnreact
