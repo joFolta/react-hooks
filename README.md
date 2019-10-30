@@ -1,13 +1,13 @@
 # react-hooks
 
-![Preview](/public/preview1.png)
 
-Part 1: useState() Part 1 - Creating State  https://scrimba.com/p/p7P5Hd/cRqP9mhg
+#### Commit 1 >>> Part 1: useState() Part 1 - Creating State  https://scrimba.com/p/p7P5Hd/cRqP9mhg
+![Preview](/public/preview1.png)
+#### Commit 2 >>> Part 2: useState() Part 1 - Changing State  https://scrimba.com/p/p7P5Hd/cWQw9JH2
+![Preview](/public/preview2.png)
 
 React tutorial
 https://scrimba.com/g/glearnreact
-
-React Forms Part I, Part II
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

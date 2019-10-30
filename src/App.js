@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 
 function App() {
-  //array destructuring
-  const [answer] = useState("Yes");
+  const [count, setCount] = useState(0);
+
+  function increment() {
+    setCount(prevCount => prevCount + 1);
+  }
+
+  function decrement() {
+    setCount(prevCount => prevCount - 1);
+  }
 
   return (
     <div>
-      <h1>Is state important to know? {answer}</h1>
+      <h1>{count}</h1>
+      <button onClick={increment}>Increment!</button>
+      <br />
+      <button onClick={decrement}>Decrement!</button>
     </div>
   );
 }
@@ -15,14 +25,24 @@ function App() {
 //   constructor() {
 //     super();
 //     this.state = {
-//       answer: "Yes"
+//       count: 0
 //     };
+//     this.handleChange = this.handleChange.bind(this);
+//   }
+
+//   handleChange() {
+//     this.setState(prevState => {
+//       return {
+//         count: prevState.count + 1
+//       };
+//     });
 //   }
 
 //   render() {
 //     return (
 //       <div>
-//         <h1>Is state important to know? {this.state.answer}</h1>
+//         <h1>{this.state.count}</h1>
+//         <button onClick={this.handleChange}>Change!</button>
 //       </div>
 //     );
 //   }
